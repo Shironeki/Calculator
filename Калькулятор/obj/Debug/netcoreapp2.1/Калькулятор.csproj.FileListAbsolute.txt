@@ -1,0 +1,11 @@
+C:\Users\Kaneki\source\repos\Калькулятор\bin\Debug\netcoreapp2.1\Калькулятор.deps.json
+C:\Users\Kaneki\source\repos\Калькулятор\bin\Debug\netcoreapp2.1\Калькулятор.runtimeconfig.json
+C:\Users\Kaneki\source\repos\Калькулятор\bin\Debug\netcoreapp2.1\Калькулятор.runtimeconfig.dev.json
+C:\Users\Kaneki\source\repos\Калькулятор\bin\Debug\netcoreapp2.1\Калькулятор.dll
+C:\Users\Kaneki\source\repos\Калькулятор\bin\Debug\netcoreapp2.1\Калькулятор.pdb
+C:\Users\Kaneki\source\repos\Калькулятор\obj\Debug\netcoreapp2.1\Калькулятор.csprojAssemblyReference.cache
+C:\Users\Kaneki\source\repos\Калькулятор\obj\Debug\netcoreapp2.1\Калькулятор.csproj.CoreCompileInputs.cache
+C:\Users\Kaneki\source\repos\Калькулятор\obj\Debug\netcoreapp2.1\Калькулятор.AssemblyInfoInputs.cache
+C:\Users\Kaneki\source\repos\Калькулятор\obj\Debug\netcoreapp2.1\Калькулятор.AssemblyInfo.cs
+C:\Users\Kaneki\source\repos\Калькулятор\obj\Debug\netcoreapp2.1\Калькулятор.dll
+C:\Users\Kaneki\source\repos\Калькулятор\obj\Debug\netcoreapp2.1\Калькулятор.pdb
