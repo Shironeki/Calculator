@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -70,9 +70,9 @@ namespace Калькулятор
                     Console.WriteLine(shift + "+");
                 }
                 double temp = list[i] * Math.Pow(10, i);
-                result += temp;
+                result += temp*rule;
             }
-            if (t != 0) result *= t * rule;
+            if (t != 0) result *= t;
             Console.WriteLine("----------------\n{0}\b{1} ", shift, result);
         }
         //Деление
@@ -179,10 +179,10 @@ namespace Калькулятор
         {
             //В List<double> будут храниться значения переменных при вычитании
             List<double> list = new List<double> { };
+            int d = RulesForSum(n1, n2);
             int max = Null(ref n1, ref n2);
             double m = 1;
             for (int i = max; i > 0; i--) { m *= 0.1; }
-            int d = RulesForSum(n1, n2);
             string shift = "       ";
             Console.WriteLine("{0}{1}\n{0}\b-\n{0}{2}\n{0}" + new string('-', n1.Length), shift, n1, n2);
             int[] ch1 = n1.ToString().Select(c => (int)char.GetNumericValue(c)).ToArray();
@@ -225,16 +225,13 @@ namespace Калькулятор
             if (max != 0) result *= m;
             int o = n1.Length - result.ToString().Length;
             Console.WriteLine("{0}" + new string (' ', o) + "{1}", shift, result);
-            for (int i = 0; i < list.Count; i++)
-            {
-                Console.WriteLine(list[i]);
-            }
         }
         //Сложение
         public static void Sum(string n1, string n2, ref double result)
         {
             //В List<double> будут храниться значения переменных при вычитании
             List<double> list = new List<double> { };
+            int d = RulesForSum(n1, n2);
             int max = Null(ref n1, ref n2);
             double m = 1;
             string shift = "       ";
@@ -242,7 +239,6 @@ namespace Калькулятор
             for (int i = max; i > 0; i--) { m *= 0.1; }
             int[] ch1 = n1.ToString().Select(c => (int)char.GetNumericValue(c)).ToArray();
             int[] ch2 = n2.ToString().Select(c => (int)char.GetNumericValue(c)).ToArray();
-            int d = RulesForSum(n1, n2);
             double temp;
             int p = n1.Length - 1;
             int x = 1;
